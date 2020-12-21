@@ -1,0 +1,22 @@
+footer {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  height: 50px;
+  width: 100%;
+  background-color: $jet_o !important;
+
+  span {
+    font-family: $sanchez;
+    color: $white;
+    font-size: 0.7rem;
+
+    @media screen and (min-width: $tablet_breakpoint) {
+      font-size: 0.8rem;
+    }
+
+    @media screen and (min-width: $computer_breakpoint) {
+      font-size: 0.9rem;
+    }
+  }
+}

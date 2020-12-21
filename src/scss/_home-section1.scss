@@ -1,0 +1,105 @@
+/* ----- SECTION 1 STYLE ----- */
+
+.blue_text {
+  color: $metallic_seaweed;
+}
+
+.title__s1 {
+  position: absolute;
+  top: 50%;
+  transform: translate3d(0, -50%, 0);
+  overflow: hidden;
+  margin-left: 8%;
+  margin-right: 10px;
+  font-family: $sanchez;
+  font-size: 1rem;
+  color: $white;
+  letter-spacing: 2px;
+  // line-height: normal;
+
+  @media screen and (min-width: $tablet_breakpoint) {
+    margin-left: 10%;
+    font-size: 1.8rem;
+  }
+
+  @media screen and (min-width: $computer_breakpoint) {
+    font-size: 2.5rem;
+  }
+}
+
+.skills__s1 {
+  position: absolute;
+  top: 75%;
+  transform: translate3d(0, -60%, 0);
+  margin-left: 8%;
+  font-size: 0.8rem;
+  overflow: hidden;
+  font-family: $roboto_slab;
+  font-weight: 300;
+  color: $black_coral;
+  letter-spacing: 3px;
+
+  @media screen and (min-width: $tablet_breakpoint) {
+    top: 72%;
+    margin-left: 10%;
+    font-size: 1rem;
+  }
+
+  @media screen and (min-width: $computer_breakpoint) {
+    top: 80%;
+    transform: translate3d(0, -70%, 0);
+    font-size: 1.2rem;
+  }
+}
+
+@keyframes mainSlideIn {
+  from {
+    transform: translate3d(-100%, 0, 0);
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes mainSlideOut {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+.s1 {
+  &.active {
+    .title__s1 {
+      h1 {
+        transform: translate3d(-100%, 0, 0);
+        animation: 1s ease-out 0.3s forwards mainSlideIn;
+      }
+    }
+
+    .skills__s1 {
+      p {
+        transform: translate3d(-100%, 0, 0);
+        animation: 1s ease-out 0.5s forwards mainSlideIn;
+      }
+    }
+  }
+
+  &:not(.active) {
+    .title__s1 {
+      h1 {
+        transform: translate3d(0, 0, 0);
+        animation: 1s ease-in forwards mainSlideOut;
+      }
+    }
+
+    .skills__s1 {
+      p {
+        transform: translate3d(0, 0, 0);
+        animation: 1s ease-in forwards mainSlideOut;
+      }
+    }
+  }
+}

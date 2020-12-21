@@ -1,0 +1,218 @@
+.main_row {
+  padding-bottom: 25px;
+
+  @media screen and (min-width: $tablet_breakpoint) {
+    padding-bottom: 75px;
+  }
+
+  @media screen and (min-width: $computer_breakpoint) {
+    padding-bottom: 125px;
+  }
+}
+
+.intro {
+  padding-top: 100px;
+
+  @media screen and (min-width: $tablet_breakpoint) {
+    padding-top: 150px;
+  }
+
+  @media screen and (min-width: $computer_breakpoint) {
+    padding-top: 200px;
+  }
+}
+
+// Projects Description
+h2 {
+  text-transform: uppercase;
+  color: $metallic_seaweed;
+  font-family: $roboto_slab;
+  font-size: 1.1rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  margin-bottom: 16px;
+
+  @media screen and (min-width: $computer_breakpoint) {
+    font-size: 1.2rem;
+  }
+}
+
+h3 {
+  text-transform: capitalize;
+  color: $metallic_seaweed;
+  font-family: $roboto_slab;
+  font-size: 0.9rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  margin-top: 16px;
+
+  @media screen and (min-width: $computer_breakpoint) {
+    font-size: 1rem;
+    margin-top: 0;
+  }
+}
+
+.p {
+  color: $white;
+  font-family: $roboto;
+  font-weight: 300;
+  font-size: 0.8rem;
+  line-height: 20px;
+
+  @media screen and (min-width: $computer_breakpoint) {
+    font-size: 0.9rem;
+  }
+}
+
+.skills_set {
+  li {
+    margin-left: 16px;
+    margin-bottom: 16px;
+
+    i {
+      font-size: 1rem;
+      margin-right: 10px;
+    }
+
+    a {
+      color: $white;
+      font-family: $roboto;
+      font-weight: 300;
+      line-height: 20px !important;
+      font-size: 0.8rem;
+      transition: all 0.3s;
+
+      @media screen and (min-width: $computer_breakpoint) {
+        font-size: 0.9rem;
+      }
+
+      &:hover {
+        color: $metallic_seaweed;
+      }
+    }
+  }
+}
+
+.links {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.website_link {
+  font-family: $sanchez;
+  font-size: 0.8rem;
+  border-radius: 5px;
+  color: $white;
+  padding: 8px 15px;
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  transition: all 0.3s;
+
+  @media screen and (min-width: $tablet_breakpoint) {
+    width: 164px;
+  }
+
+  &:hover {
+    border-radius: 30px;
+    color: $white;
+  }
+
+  &:first-child {
+    @media screen and (min-width: $tablet_breakpoint) {
+      margin-right: 16px;
+    }
+  }
+
+  i {
+    font-size: 1.1rem;
+    margin-right: 15px;
+
+    @media screen and (min-width: $computer_breakpoint) {
+      font-size: 1.2rem;
+    }
+  }
+}
+
+// Projects Image
+.image {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+// Global Rules
+.marginBottom {
+  margin-bottom: 16px;
+}
+
+.html {
+  color: $html;
+}
+
+.css {
+  color: $css;
+}
+
+.sass {
+  color: $sass;
+}
+
+.js {
+  color: $js;
+}
+
+.bootstrap {
+  color: $bootstrap;
+}
+
+.library {
+  color: $metallic_seaweed;
+}
+
+.wordpress {
+  color: $wordpress;
+}
+
+.elementor {
+  color: $elementor;
+}
+
+.plug {
+  color: $metallic_seaweed;
+}
+
+.react {
+  color: $react;
+}
+
+.github {
+  background-color: $github;
+
+  &:hover {
+    background-color: $github_o;
+  }
+}
+
+.live_link {
+  background-color: $metallic_seaweed;
+
+  &:hover {
+    background-color: $metallic_seaweed_o;
+  }
+}
+
+hr {
+  border-top: 2.5px solid $metallic_seaweed;
+  border-radius: 25px;
+
+  @media screen and (min-width: $tablet_breakpoint) {
+    border-top: 3px solid $metallic_seaweed;
+  }
+
+  @media screen and (min-width: $computer_breakpoint) {
+    border-top: 3.5px solid $metallic_seaweed;
+  }
+}

@@ -1,0 +1,304 @@
+#main {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+/* -----LEFT CONTAINER----- */
+.left__container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: $computer_breakpoint) {
+    width: 45%;
+  }
+}
+
+.infos__container {
+  width: 100%;
+  padding: 100px 50px 50px;
+
+  @media screen and (min-width: $tablet_breakpoint) {
+    padding: 150px 75px 50px;
+  }
+
+  @media screen and (min-width: $computer_breakpoint) {
+    padding: 200px 150px 50px;
+  }
+
+  h2 {
+    text-transform: uppercase;
+    color: $metallic_seaweed;
+    font-family: $roboto_slab;
+    font-size: 1.1rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    margin-bottom: 16px;
+
+    @media screen and (min-width: $computer_breakpoint) {
+      font-size: 1.2rem;
+    }
+  }
+
+  p {
+    color: $white;
+    font-family: $roboto;
+    font-weight: 300;
+    font-size: 0.8rem;
+    line-height: 20px;
+
+    @media screen and (min-width: $computer_breakpoint) {
+      font-size: 0.9rem;
+    }
+  }
+
+  li {
+    margin-bottom: 5px;
+  }
+
+  a {
+    color: $white;
+    font-family: $roboto;
+    font-weight: 500;
+    font-size: 0.9rem;
+    transition: opacity 0.3s;
+
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+}
+
+.personalityContainer {
+  display: flex;
+  flex-flow: row wrap;
+  margin-bottom: 16px;
+  margin-top: 16px;
+  align-items: center;
+  background-color: $metallic_seaweed;
+  border-radius: 5px;
+  padding: 5px;
+
+  img {
+    width: 60px;
+    height: auto;
+
+    @media screen and (min-width: $tablet_breakpoint) {
+      width: 85px;
+    }
+
+    @media screen and (min-width: $computer_breakpoint) {
+      width: 100px;
+    }
+  }
+}
+
+.pContainer {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  margin-left: 10px;
+  margin-top: 5px;
+
+  p {
+    color: $white;
+    font-family: $sanchez;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    margin-bottom: 3px;
+
+    @media screen and (min-width: $tablet_breakpoint) {
+      font-size: 0.9rem;
+    }
+
+    @media screen and (min-width: $computer_breakpoint) {
+      font-size: 1rem;
+    }
+  }
+}
+
+.tooltip__container {
+  button {
+    background-color: transparent;
+    border: none;
+    color: $white;
+    font-family: $roboto;
+    font-weight: 500;
+    font-size: 0.9rem;
+    transition: opacity 0.3s;
+
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+}
+
+.pp__container {
+  width: 250px;
+  height: 250px;
+  border-radius: 5px;
+  background-image: url("../assets/img/20201219_105324-2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: sepia(20%);
+  margin-bottom: 100px;
+  margin-left: 50px;
+
+  @media screen and (min-width: $tablet_breakpoint) {
+    width: 275px;
+    height: 275px;
+    margin-bottom: 75px;
+    margin-left: 75px;
+  }
+
+  @media screen and (min-width: $computer_breakpoint) {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 100px;
+    margin-left: 150px;
+  }
+}
+
+/* -----RIGHT CONTAINER----- */
+.right__container {
+  width: 100%;
+  background-color: $eerie_black;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  @media screen and (min-width: $computer_breakpoint) {
+    width: 55%;
+  }
+}
+
+.resume__container {
+  width: 100%;
+  padding: 50px 50px 100px;
+
+  @media screen and (min-width: $tablet_breakpoint) {
+    padding: 50px 75px 75px;
+  }
+
+  @media screen and (min-width: $computer_breakpoint) {
+    padding: 200px 100px 200px 150px;
+  }
+
+  h2 {
+    text-transform: uppercase;
+    color: $metallic_seaweed;
+    font-family: $roboto_slab;
+    font-size: 1.1rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+
+    @media screen and (min-width: $computer_breakpoint) {
+      font-size: 1.2rem;
+    }
+  }
+
+  h3 {
+    text-transform: uppercase;
+    color: $white;
+    font-family: $roboto_slab;
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    margin-bottom: 16px;
+    margin-top: 16px;
+
+    @media screen and (min-width: $computer_breakpoint) {
+      font-size: 1rem;
+    }
+  }
+
+  h4 {
+    color: $white;
+    font-family: $roboto;
+    font-size: 0.8rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+
+    @media screen and (min-width: $computer_breakpoint) {
+      font-size: 0.9rem;
+    }
+  }
+
+  p {
+    font-family: $roboto;
+    font-size: 0.8rem;
+    font-weight: 300;
+    margin-bottom: 0;
+
+    @media screen and (min-width: $computer_breakpoint) {
+      font-size: 0.9rem;
+    }
+  }
+}
+
+.firstP {
+  color: $white;
+  padding-left: 15px;
+}
+
+.secondP {
+  color: $metallic_seaweed;
+  font-style: italic;
+}
+
+.marginTop {
+  margin-top: 16px;
+}
+
+.margin45 {
+  margin-left: 45px;
+}
+
+.marginBottom {
+  margin-bottom: 16px !important;
+}
+
+.dates {
+  color: $black_coral;
+}
+
+/* -----DOWNLOAD RESUME----- */
+
+.btn__container {
+  width: 100%;
+
+  a {
+    font-family: $sanchez;
+    font-size: 0.8rem;
+    border-radius: 5px;
+    color: $white;
+    background-color: $metallic_seaweed;
+    padding: 8px 15px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    transition: all 0.3s;
+
+    @media screen and (min-width: $tablet_breakpoint) {
+      font-size: 1rem;
+      width: 204px;
+    }
+
+    &:hover {
+      background-color: $metallic_seaweed_o;
+      border-radius: 30px;
+    }
+  }
+
+  i {
+    font-size: 1.1rem;
+    margin-right: 15px;
+
+    @media screen and (min-width: $computer_breakpoint) {
+      font-size: 1.2rem;
+    }
+  }
+}

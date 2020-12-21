@@ -1,0 +1,73 @@
+// Google Fonts
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400;500;600;700;800;900&display=swap"); /*COntents' font*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap"); /*Numbers' font*/
+@import url("https://fonts.googleapis.com/css2?family=Sanchez&display=swap");
+
+// Fonts Variables
+$roboto: "Roboto", sans-serif;
+$roboto_slab: "Roboto Slab", serif;
+$sanchez: "Sanchez", serif;
+
+// Color Variables
+$black_coral: #576066;
+$jet: #141414;
+$jet_o: rgba(0, 0, 0, 0.3);
+$rich_black: #0a0a0a;
+$eerie_black: #1f1f1f;
+$metallic_seaweed: #007d91;
+$metallic_seaweed_o: rgba(0, 125, 145, 0.85);
+$metallic_seaweed_o2: rgba(0, 125, 145, 0.5);
+$white: #fff;
+$white_o: rgba(255, 255, 255, 0.5);
+$cultured: #f5f5f5;
+
+$html: #f16529;
+$css: #29a9df;
+$sass: #ce679a;
+$js: #f7df1e;
+$bootstrap: #7952b3;
+$github: #2b3137;
+$github_o: rgba(43, 49, 55, 0.85);
+$wordpress: #135e96;
+$elementor: #db3157;
+$react: #61dafb;
+
+// Media Queries Variables
+$tablet_breakpoint: 768px;
+$computer_breakpoint: 992px;
+
+// Global Style
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+::selection {
+  text-shadow: none;
+  background-color: $metallic_seaweed_o2;
+  color: $white;
+}
+
+html {
+  line-height: normal !important;
+}
+
+body {
+  height: 100%;
+  background-color: $jet;
+  scroll-behavior: smooth;
+  line-height: normal !important;
+}
+
+//Others Style
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none !important;
+  line-height: normal !important;
+}

@@ -1,0 +1,75 @@
+/* ----- SECTION 3 STYLE ----- */
+
+.s3 {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.img__s3 {
+  width: 100%;
+  height: 80%;
+  background-image: url("../assets/img/novi-raj-cjnpPXVNvrQ-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 40% 50%;
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+
+  &::after {
+    content: "";
+    background-color: $metallic_seaweed_o2;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    position: absolute;
+    border-radius: 3px;
+  }
+
+  &:hover {
+    .meta__container {
+      opacity: 0.6;
+    }
+  }
+}
+
+.s3 {
+  &.active {
+    .black__curtain {
+      animation: 1s ease-in forwards curtainSlideOut;
+    }
+    .main__title {
+      transform: translate3d(-100%, 0, 0);
+      animation: 1s ease-out 0.3s forwards metaSlideIn;
+    }
+    .description {
+      transform: translate3d(-100%, 0, 0);
+      animation: 1s ease-out 0.4s forwards metaSlideIn;
+    }
+    .butn {
+      transform: translate3d(0, 100%, 0);
+      animation: 0.5s ease-out 0.5s forwards btnSlideIn;
+    }
+  }
+
+  &:not(.active) {
+    .black__curtain {
+      animation: 1s ease-in forwards curtainSlideIn;
+    }
+    .main__title {
+      transform: translate3d(0, 0, 0);
+      animation: 1s ease-in forwards metaSlideOut;
+    }
+    .description {
+      transform: translate3d(0, 0, 0);
+      animation: 1s ease-in forwards metaSlideOut;
+    }
+    .butn {
+      transform: translate3d(0, 0, 0);
+      animation: 0.5s ease-in forwards btnSlideOut;
+    }
+  }
+}

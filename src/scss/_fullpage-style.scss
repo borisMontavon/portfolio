@@ -1,0 +1,83 @@
+//Sections Style
+.section {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.fp-section.fp-table {
+  display: flex !important;
+}
+
+// Anchors Style
+#fp-nav {
+  z-index: 98;
+  top: auto;
+  bottom: 10px;
+  left: 50%;
+  transform: translate3d(-50%, 0, 0);
+
+  @media screen and (min-width: $computer_breakpoint) {
+    top: 50%;
+    transform: translate3d(0, 0, 0);
+    left: 98%;
+  }
+
+  ul {
+    li {
+      display: inline-block;
+      // line-height: normal;
+
+      @media screen and (min-width: $computer_breakpoint) {
+        display: block;
+      }
+
+      a {
+        span {
+          background-color: $white;
+        }
+      }
+    }
+  }
+}
+
+.scrolldown__info {
+  position: fixed;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  z-index: 10;
+  color: $white;
+  font-family: $roboto;
+  font-weight: 200;
+  top: auto;
+  bottom: 40px;
+  left: 50.75%;
+  transform: translate3d(-50.75%, 0, 0);
+
+  @media screen and (min-width: $tablet_breakpoint) {
+    left: 50.2%;
+    transform: translate3d(-50.2%, 0, 0);
+  }
+
+  @media screen and (min-width: $computer_breakpoint) {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    top: 48%;
+    transform: translate3d(0, 0, 0);
+    left: 97%;
+  }
+
+  p {
+    font-size: 0.6rem;
+    // line-height: normal;
+    margin-bottom: 0;
+
+    @media screen and (min-width: $tablet_breakpoint) {
+      font-size: 0.65rem;
+    }
+
+    @media screen and (min-width: $computer_breakpoint) {
+      font-size: 0.7rem;
+    }
+  }
+}
