@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import WorksImage from './WorksImage';
 import H3Component from '../H3Component';
+import WorksImage from './WorksImage';
 import ParaComponent from '../ParaComponent';
 import ToolsList from './ToolsList';
 import WorksLinksContainer from './WorksLinksContainer';
@@ -13,7 +13,9 @@ class WorksTwo extends React.Component {
         return (
             <>
                 <div className="row pt-5 pb-5">
-                    <WorksImage imageUrl="./assets/img/food-survey-works.jpg" altText="..." />
+                    <div className="col-lg-6">
+                        <WorksImage imageClass="image_2" imageTitle="food survey" />
+                    </div>
                     <div className="col-lg-6">
                         <H3Component h3Class="marginBottom" text="Description :" />
                         <ParaComponent pClass="marginBottom p" text={i18n.works.w2Description} />

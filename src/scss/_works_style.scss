@@ -137,10 +137,18 @@ h3 {
 }
 
 // Projects Image
-.image {
+
+@mixin image($image) {
+  background-image: $image;
+  background-size: cover;
+  background-repeat: no-repeat;
   width: 100%;
   height: 200px;
   border-radius: 5px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   @media screen and (min-width: $tablet_breakpoint) {
     height: 408px;
@@ -148,6 +156,61 @@ h3 {
 
   @media screen and (min-width: $computer_breakpoint) {
     height: 480px;
+  }
+
+  &::after {
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $jet_o2;
+    position: absolute;
+    z-index: 2;
+  }
+}
+
+@mixin title4($font_family, $font_size, $font_size_t) {
+  font-family: $font_family;
+  font-size: $font_size;
+  text-transform: capitalize;
+  color: $white;
+  z-index: 3;
+
+  @media screen and (min-width: $tablet_breakpoint) {
+    font-size: $font_size_t;
+  }
+}
+
+.image_1 {
+  @include image(url("../assets/img/portfolio-works.jpg"));
+
+  h4 {
+    @include title4($sanchez, 2.5rem, 5rem);
+  }
+}
+
+.image_2 {
+  @include image(url("../assets/img/food-survey-works.jpg"));
+
+  h4 {
+    @include title4($eb_garamond, 2.5rem, 5rem);
+  }
+}
+
+.image_3 {
+  @include image(url("../assets/img/potlatch-works.jpg"));
+
+  h4 {
+    @include title4($quicksand, 2.5rem, 5rem);
+  }
+}
+
+.image_4 {
+  @include image(url("../assets/img/cuba-works.jpg"));
+
+  h4 {
+    @include title4($pacifico, 2.5rem, 5rem);
   }
 }
 

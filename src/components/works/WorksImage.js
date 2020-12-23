@@ -2,12 +2,12 @@ import React from 'react';
 
 class WorksImage extends React.Component {
     render() {
-    const {imageUrl, altText} = this.props;
+    const {imageClass, imageTitle} = this.props;
 
         return (
             <>
-                <div className="col-lg-6">
-                    <img src={imageUrl} className="image" alt={altText} />
+                <div className={imageClass}>
+                    <h4>{imageTitle}</h4>
                 </div>
             </>
         )

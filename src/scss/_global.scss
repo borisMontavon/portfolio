@@ -1,18 +1,24 @@
 // Google Fonts
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400;500;600;700;800;900&display=swap"); /*COntents' font*/
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap"); /*Numbers' font*/
 @import url("https://fonts.googleapis.com/css2?family=Sanchez&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
 
 // Fonts Variables
 $roboto: "Roboto", sans-serif;
 $roboto_slab: "Roboto Slab", serif;
 $sanchez: "Sanchez", serif;
+$pacifico: "Pacifico", cursive;
+$eb_garamond: "EB Garamond", serif;
+$quicksand: "Quicksand", sans-serif;
 
 // Color Variables
 $black_coral: #576066;
 $jet: #141414;
 $jet_o: rgba(0, 0, 0, 0.3);
+$jet_o2: rgba(0, 0, 0, 0.6);
 $rich_black: #0a0a0a;
 $eerie_black: #1f1f1f;
 $metallic_seaweed: #007d91;
