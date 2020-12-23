@@ -1,0 +1,44 @@
+#top-button {
+  position: fixed;
+  overflow: hidden;
+  opacity: 0;
+  bottom: 10px;
+  right: 10px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  padding: 0;
+  background-color: $metallic_seaweed;
+  color: $white;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1.4rem;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  transition: 0.3s;
+
+  &:hover {
+    background-color: $metallic_seaweed_o;
+    border-radius: 20px;
+  }
+
+  @media screen and (min-width: $computer_breakpoint) {
+    bottom: 20px;
+    right: 30px;
+    width: 40px;
+    height: 40px;
+  }
+
+  i {
+    padding: 3px;
+
+    @media screen and (min-width: $computer_breakpoint) {
+      padding: 8px;
+    }
+  }
+}
+
+.fade {
+  opacity: 1 !important;
+}

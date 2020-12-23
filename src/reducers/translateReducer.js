@@ -15,11 +15,11 @@ const getI18n = (action) => {
 const getPdfLink = (action) => {
     switch(action.value) {
         case 'en':
-            return './assets/documents/CV English 2 pages.pdf';
+            return './assets/documents/Boris-Montavon-Resume.pdf';
         case 'fr':
-            return './assets/documents/CV Français 2 pages 2.pdf';
+            return './assets/documents/CV-Boris-Montavon.pdf';
         default:
-            return './assets/documents/CV English 2 pages.pdf';
+            return './assets/documents/Boris-Montavon-Resume.pdf';
     }
 }
 

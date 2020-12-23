@@ -13,7 +13,7 @@ class WorksTwo extends React.Component {
         return (
             <>
                 <div className="row pt-5 pb-5">
-                    <WorksImage imageUrl="./assets/img/pexels-danny-meneses-943096.jpg" altText="..." />
+                    <WorksImage imageUrl="./assets/img/food-survey-works.jpg" altText="..." />
                     <div className="col-lg-6">
                         <H3Component h3Class="marginBottom" text="Description :" />
                         <ParaComponent pClass="marginBottom p" text={i18n.works.w2Description} />

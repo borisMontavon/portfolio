@@ -139,8 +139,16 @@ h3 {
 // Projects Image
 .image {
   width: 100%;
-  height: 100%;
+  height: 200px;
   border-radius: 5px;
+
+  @media screen and (min-width: $tablet_breakpoint) {
+    height: 408px;
+  }
+
+  @media screen and (min-width: $computer_breakpoint) {
+    height: 480px;
+  }
 }
 
 // Global Rules
