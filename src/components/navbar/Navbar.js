@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import $ from 'jquery';
-import { connect, useDispatch } from 'react-redux';
+import { connect } from 'react-redux';
 import { translate } from '../../actions/config';
 import Hamburger from './Hamburger';
 import ProLinks from './ProLinks';
@@ -119,6 +119,8 @@ const mapDispatchToProps = (dispatch) => {
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(Navbar);
+
+// import { connect, useDispatch } from 'react-redux';
 
 // function App() {
 //   const counter = useSelector(state => state.counterReducer);
