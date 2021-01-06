@@ -8,7 +8,7 @@ class ResumeButton extends React.Component {
         return (
             <>
                 <div className="btn__container">
-                    <a href={pdfLink} target="_blank"><i className="fas fa-hand-spock"></i>{i18n.about.resumeButton}</a>
+                    <a href={pdfLink} target="_blank" rel="noreferrer" ><i className="fas fa-hand-spock"></i>{i18n.about.resumeButton}</a>
                 </div>
             </>
         )

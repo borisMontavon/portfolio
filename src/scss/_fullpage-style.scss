@@ -11,73 +11,32 @@
 
 // Anchors Style
 #fp-nav {
-  z-index: 98;
-  top: auto;
-  bottom: 10px;
-  left: 50%;
-  transform: translate3d(-50%, 0, 0);
+  z-index: 98 !important;
+  top: auto !important;
+  bottom: 10px !important;
+  left: 50% !important;
+  transform: translate3d(-50%, 0, 0) !important;
 
   @media screen and (min-width: $computer_breakpoint) {
-    top: 50%;
-    transform: translate3d(0, 0, 0);
-    left: 98%;
+    top: 50% !important;
+    transform: translate3d(0, 0, 0) !important;
+    left: 97% !important;
   }
 
   ul {
     li {
-      display: inline-block;
+      display: inline-block !important;
       // line-height: normal;
 
       @media screen and (min-width: $computer_breakpoint) {
-        display: block;
+        display: block !important;
       }
 
       a {
         span {
-          background-color: $white;
+          background-color: $white !important;
         }
       }
-    }
-  }
-}
-
-.scrolldown__info {
-  position: fixed;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  z-index: 10;
-  color: $white;
-  font-family: $roboto;
-  font-weight: 200;
-  top: auto;
-  bottom: 40px;
-  left: 50.75%;
-  transform: translate3d(-50.75%, 0, 0);
-
-  @media screen and (min-width: $tablet_breakpoint) {
-    left: 50.2%;
-    transform: translate3d(-50.2%, 0, 0);
-  }
-
-  @media screen and (min-width: $computer_breakpoint) {
-    writing-mode: vertical-rl;
-    text-orientation: mixed;
-    top: 48%;
-    transform: translate3d(0, 0, 0);
-    left: 97%;
-  }
-
-  p {
-    font-size: 0.6rem;
-    // line-height: normal;
-    margin-bottom: 0;
-
-    @media screen and (min-width: $tablet_breakpoint) {
-      font-size: 0.65rem;
-    }
-
-    @media screen and (min-width: $computer_breakpoint) {
-      font-size: 0.7rem;
     }
   }
 }

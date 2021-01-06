@@ -30,7 +30,7 @@ class WorksOne extends React.Component {
                             <ToolsList icon="fab fa-react react" text="React + Redux" />
                             <LibraryList link="https://alvarotrigo.com/fullPage/#page1" icon="fas fa-code-branch library" text="fullPage.js" />
                         </ul>
-                        <PortfolioGitLink gitLink="#" />
+                        <PortfolioGitLink gitLink="https://github.com/borisMontavon/portfolio" />
                     </div>
                 </div>
             </>

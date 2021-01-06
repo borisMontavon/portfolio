@@ -7,7 +7,7 @@ class PortfolioGitLink extends React.Component {
         return (
             <>
                 <div className="links">
-                    <a href={gitLink} className="website_link github"><i className="fab fa-github-square"></i>GitHub</a>
+                    <a href={gitLink} target="_blank" rel="noreferrer" className="website_link github"><i className="fab fa-github-square"></i>GitHub</a>
                 </div>
             </>
         )

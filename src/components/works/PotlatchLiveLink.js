@@ -7,7 +7,7 @@ class PotlatchLiveLink extends React.Component {
         return (
             <>
                 <div className="links">
-                    <a href={liveLink} className="website_link live_link"><i className="fas fa-globe"></i>{liveText}</a>
+                    <a href={liveLink} target="_blank" rel="noreferrer" className="website_link live_link"><i className="fas fa-globe"></i>{liveText}</a>
                 </div>
             </>
         )

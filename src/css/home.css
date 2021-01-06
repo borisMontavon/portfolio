@@ -41,56 +41,23 @@ a {
   display: flex !important; }
 
 #fp-nav {
-  z-index: 98;
-  top: auto;
-  bottom: 10px;
-  left: 50%;
-  transform: translate3d(-50%, 0, 0); }
+  z-index: 98 !important;
+  top: auto !important;
+  bottom: 10px !important;
+  left: 50% !important;
+  transform: translate3d(-50%, 0, 0) !important; }
   @media screen and (min-width: 992px) {
     #fp-nav {
-      top: 50%;
-      transform: translate3d(0, 0, 0);
-      left: 98%; } }
+      top: 50% !important;
+      transform: translate3d(0, 0, 0) !important;
+      left: 97% !important; } }
   #fp-nav ul li {
-    display: inline-block; }
+    display: inline-block !important; }
     @media screen and (min-width: 992px) {
       #fp-nav ul li {
-        display: block; } }
+        display: block !important; } }
     #fp-nav ul li a span {
-      background-color: #fff; }
-
-.scrolldown__info {
-  position: fixed;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  z-index: 10;
-  color: #fff;
-  font-family: "Roboto", sans-serif;
-  font-weight: 200;
-  top: auto;
-  bottom: 40px;
-  left: 50.75%;
-  transform: translate3d(-50.75%, 0, 0); }
-  @media screen and (min-width: 768px) {
-    .scrolldown__info {
-      left: 50.2%;
-      transform: translate3d(-50.2%, 0, 0); } }
-  @media screen and (min-width: 992px) {
-    .scrolldown__info {
-      writing-mode: vertical-rl;
-      text-orientation: mixed;
-      top: 48%;
-      transform: translate3d(0, 0, 0);
-      left: 97%; } }
-  .scrolldown__info p {
-    font-size: 0.6rem;
-    margin-bottom: 0; }
-    @media screen and (min-width: 768px) {
-      .scrolldown__info p {
-        font-size: 0.65rem; } }
-    @media screen and (min-width: 992px) {
-      .scrolldown__info p {
-        font-size: 0.7rem; } }
+      background-color: #fff !important; }
 
 /* ----- SECTION 1 STYLE ----- */
 .blue_text {
@@ -102,18 +69,21 @@ a {
   transform: translate3d(0, -50%, 0);
   overflow: hidden;
   margin-left: 8%;
-  margin-right: 10px;
-  font-family: "Sanchez", serif;
-  font-size: 1rem;
-  color: #fff;
-  letter-spacing: 2px; }
+  margin-right: 10px; }
   @media screen and (min-width: 768px) {
     .title__s1 {
-      margin-left: 10%;
-      font-size: 1.8rem; } }
-  @media screen and (min-width: 992px) {
-    .title__s1 {
-      font-size: 2.5rem; } }
+      margin-left: 10%; } }
+  .title__s1 h1 {
+    font-family: "Sanchez", serif;
+    font-size: 1rem;
+    color: #fff;
+    letter-spacing: 2px; }
+    @media screen and (min-width: 768px) {
+      .title__s1 h1 {
+        font-size: 2.5rem; } }
+    @media screen and (min-width: 992px) {
+      .title__s1 h1 {
+        font-size: 5.5rem; } }
 
 .skills__s1 {
   position: absolute;
