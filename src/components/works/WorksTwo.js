@@ -27,7 +27,7 @@ class WorksTwo extends React.Component {
                             <ToolsList icon="fab fa-js-square js" text="JavaScript" />
                             <ToolsList icon="fab fa-react react" text="React + Redux" />                           
                         </ul>
-                        <WorksLinksContainer gitLink="https://github.com/borisMontavon/food-survey/" liveLink="" liveText={i18n.works.liveButton} />
+                        <WorksLinksContainer gitLink="https://github.com/borisMontavon/food-survey/" liveLink="http://portfolio.borismontavon.com/works" liveText={i18n.works.liveButton} />
                     </div>
                 </div>
             </>

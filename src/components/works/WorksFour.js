@@ -29,7 +29,7 @@ class WorksFour extends React.Component {
                             <LibraryList link="https://ganlanyuan.github.io/tiny-slider/demo/" icon="fas fa-code-branch library" text="Tiny Slider" />
                             <LibraryList link="https://darkmodejs.learn.uno/" icon="fas fa-code-branch library" text="darkmode.js" />
                         </ul>
-                        <WorksLinksContainer gitLink="https://github.com/borisMontavon/cuba" liveLink="" liveText={i18n.works.liveButton} />
+                        <WorksLinksContainer gitLink="https://github.com/borisMontavon/cuba" liveLink="http://cuba.borismontavon.com/" liveText={i18n.works.liveButton} />
                     </div>
                 </div>
             </>

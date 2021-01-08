@@ -29,7 +29,7 @@ class WorksThree extends React.Component {
                             <ToolsList icon="fas fa-plug plug" text="Ocean Extra, used in addition of OceanWP theme" />
                             <ToolsList icon="fab fa-css3-alt css" text="CSS3" />
                         </ul>
-                        <PotlatchLiveLink liveLink="" liveText={i18n.works.liveButton} />
+                        <PotlatchLiveLink liveLink="https://boris.alwaysdata.net/potlatch/" liveText={i18n.works.liveButton} />
                     </div>
                 </div>
             </>
